@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#111111">
+    <meta name="description" content="SOPIZZA - The Real Taste. اكتشف منيو البيتزا والإضافات والصوصات والمقبلات.">
+    <title>SOPIZZA | The Real Taste</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="#home" class="logo logo-image"><img src="Images/اللوجو.jpg" alt="SOPIZZA"></a>
+
+        <nav class="nav" aria-label="القائمة الرئيسية">
+            <a href="#home">الرئيسية</a>
+            <a href="#menu">المنيو</a>
+            <a href="#about">عن المطعم</a>
+            <a href="#contact">تواصل معنا</a>
+        </nav>
+
+        <a href="#menu" class="header-btn">اكتشف المنيو</a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة" aria-expanded="false" type="button">
+            ☰
+        </button>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <span class="eyebrow">WELCOME TO SOPIZZA</span>
+                <h1>THE REAL<br><span>TASTE</span></h1>
+                <p>طعم مختلف.. تجربة تستاهل تتكرر.</p>
+                <a href="#menu" class="main-btn">اكتشف المنيو <span>←</span></a>
+            </div>
+
+            <div class="hero-visual">
+                <div class="hero-image-wrap">
+                    <img src="Images/بيتزا الموقع.jpg" alt="بيتزا SOPIZZA المميزة" fetchpriority="high">
+                </div>
+                <span class="hero-image-label">THE REAL TASTE</span>
+                <span class="hero-image-badge">FRESH • HOT • DELICIOUS</span>
+            </div>
+        </section>
+
+        <section class="menu-section" id="menu">
+            <div class="section-heading">
+                <span class="eyebrow">OUR MENU</span>
+                <h2>منيو <span>SOPIZZA</span></h2>
+                <p>اختار اللي نفسك فيه واستمتع بالطعم.</p>
+            </div>
+
+            <div class="category-nav">
+                <a href="#pizza" class="category-link active">البيتزا</a>
+                <a href="#additions" class="category-link">الإضافات</a>
+                <a href="#sauces" class="category-link">الصوصات</a>
+                <a href="#appetizers" class="category-link">المقبلات</a>
+                <a href="#potatoes" class="category-link">البطاطس</a>
+            </div>
+
+            <section class="menu-category" id="pizza">
+                <div class="category-heading">
+                    <div>
+                        <span class="eyebrow">FRESHLY MADE</span>
+                        <h3>البيتزا</h3>
+                    </div>
+                    <span class="category-number">01</span>
+                </div>
+
+                <div class="half-offer">
+                    <span>SPECIAL OFFER</span>
+                    <h2>لو نفسك تجرب طعمين</h2>
+                    <p>متنساش تسأل على عرض النصين</p>
+                </div>
+
+                <div class="pizza-grid" id="pizza-list"></div>
+            </section>
+
+            <section class="menu-category" id="additions">
+                <div class="category-heading">
+                    <div>
+                        <span class="eyebrow">MAKE IT YOURS</span>
+                        <h3>الإضافات</h3>
+                    </div>
+                    <span class="category-number">02</span>
+                </div>
+                <div class="simple-grid" id="additions-list"></div>
+            </section>
+
+            <section class="menu-category" id="sauces">
+                <div class="category-heading">
+                    <div>
+                        <span class="eyebrow">EXTRA FLAVOR</span>
+                        <h3>الصوصات</h3>
+                    </div>
+                    <span class="category-number">03</span>
+                </div>
+                <div class="simple-grid" id="sauces-list"></div>
+            </section>
+
+            <section class="menu-category" id="appetizers">
+                <div class="category-heading">
+                    <div>
+                        <span class="eyebrow">START WITH SOMETHING</span>
+                        <h3>المقبلات</h3>
+                    </div>
+                    <span class="category-number">04</span>
+                </div>
+                <div class="simple-grid" id="appetizers-list"></div>
+            </section>
+
+            <section class="menu-category" id="potatoes">
+                <div class="category-heading">
+                    <div>
+                        <span class="eyebrow">CRISPY & DELICIOUS</span>
+                        <h3>البطاطس</h3>
+                    </div>
+                    <span class="category-number">05</span>
+                </div>
+                <div class="simple-grid" id="potatoes-list"></div>
+            </section>
+        </section>
+
+        <section class="about-section" id="about">
+            <div class="about-content">
+                <span class="eyebrow">ABOUT SOPIZZA</span>
+                <h2>مش مجرد بيتزا..<br><span>دي SOPIZZA</span></h2>
+                <p>اختار من منيو SOPIZZA واستمتع بتجربة طعم مختلفة.</p>
+            </div>
+            <div class="about-stamp" aria-hidden="true">THE<br>REAL<br>TASTE</div>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <div class="section-heading">
+                <span class="eyebrow">FIND US</span>
+                <h2>مستنيين زيارتك</h2>
+                <p>يسعدنا تواصلك معانا.</p>
+            </div>
+
+            <div class="contact-grid">
+                <a class="contact-card contact-card-link" href="https://maps.app.goo.gl/P3Sek9AZaHAZJDm9A?g_st=awb" target="_blank" rel="noopener noreferrer" aria-label="افتح موقع SOPIZZA على خرائط جوجل">
+                    <span class="contact-icon">📍</span>
+                    <h3>موقعنا</h3>
+                    <p>حسين مهران - إمبابة</p>
+                    <span class="contact-action">افتح الخريطة ←</span>
+                </a>
+
+                <div class="contact-card">
+                    <span class="contact-icon">💬</span>
+                    <h3>راسلنا على واتساب</h3>
+                    <a href="https://wa.me/201126729988" target="_blank" rel="noopener noreferrer">01126729988</a>
+                    <a href="https://wa.me/201044697805" target="_blank" rel="noopener noreferrer">01044697805</a>
+                </div>
+
+                <div class="contact-card">
+                    <span class="contact-icon">📞</span>
+                    <h3>كلمنا حالًا</h3>
+                    <a class="contact-phone" href="tel:+201126729988">01126729988</a>
+                    <a class="contact-phone" href="tel:+201044697805">01044697805</a>
+                    <span class="contact-action">اتصل بينا مباشرةً</span>
+                </div>
+
+                <a class="contact-card contact-card-link" href="https://www.talabat.com/egypt/restaurant/751704/so-pizza?aid=7552" target="_blank" rel="noopener noreferrer" aria-label="اطلب SOPIZZA من طلبات">
+                    <span class="contact-icon">🛵</span>
+                    <h3>اطلب أونلاين</h3>
+                    <p>اطلب من SOPIZZA على</p>
+                    <span class="contact-action">Talabat ←</span>
+                </a>
+            </div>
+
+            <div class="social-links" aria-label="تابع SOPIZZA على السوشيال ميديا">
+                <a href="https://www.facebook.com/share/151JhLmUv9W/" target="_blank" rel="noopener noreferrer">Facebook</a>
+                <a href="https://www.tiktok.com/@so_pizza.eg?_r=1&_t=ZS-9B8ClNYuyvK" target="_blank" rel="noopener noreferrer">TikTok</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a href="#home" class="logo logo-image"><img src="Images/اللوجو.jpg" alt="SOPIZZA"></a>
+        <p>THE REAL TASTE</p>
+        <span class="copyright">© 2026 SOPIZZA. All rights reserved.</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
